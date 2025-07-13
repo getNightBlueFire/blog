@@ -3,7 +3,6 @@
     font-family: Metropolis;
     font-style: normal;
     font-weight: 400;
-    src: url(../font/metropolis-regular-webfont.woff2) format("woff2"), url(../font/metropolis-regular-webfont.woff) format("woff")
 }
 
 @font-face {
@@ -11,7 +10,6 @@
     font-family: Metropolis;
     font-style: normal;
     font-weight: 500;
-    src: url(../font/metropolis-bold-webfont.woff2) format("woff2"), url(../font/metropolis-bold-webfont.woff) format("woff")
 }
 
 @font-face {
@@ -19,7 +17,7 @@
     font-family: Metropolis;
     font-style: normal;
     font-weight: 600;
-    src: url(../font/metropolis-extrabold-webfont.woff2) format("woff2"), url(../font/metropolis-extrabold-webfont.woff) format("woff")
+
 }
 
 @font-face {
@@ -27,8 +25,6 @@
     font-family: Open Sans;
     font-style: normal;
     font-weight: 400;
-    src: url(../font/open-sans-v17-latin-regular.eot);
-    src: url(../font/open-sans-v17-latin-regular.eot?#iefix) format("embedded-opentype"), url(../font/open-sans-v17-latin-regular.woff2) format("woff2"), url(../font/open-sans-v17-latin-regular.woff) format("woff"), url(../font/open-sans-v17-latin-regular.ttf) format("truetype"), url(../font/open-sans-v17-latin-regular.svg#OpenSans) format("svg")
 }
 
 @font-face {
@@ -36,8 +32,6 @@
     font-family: Open Sans;
     font-style: italic;
     font-weight: 400;
-    src: url(../font/open-sans-v17-latin-italic.eot);
-    src: url(../font/open-sans-v17-latin-italic.eot?#iefix) format("embedded-opentype"), url(../font/open-sans-v17-latin-italic.woff2) format("woff2"), url(../font/open-sans-v17-latin-italic.woff) format("woff"), url(../font/open-sans-v17-latin-italic.ttf) format("truetype"), url(../font/open-sans-v17-latin-italic.svg#OpenSans) format("svg")
 }
 
 @font-face {
@@ -45,8 +39,6 @@
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
-    src: url(../font/open-sans-v17-latin-600.eot);
-    src: url(../font/open-sans-v17-latin-600.eot?#iefix) format("embedded-opentype"), url(../font/open-sans-v17-latin-600.woff2) format("woff2"), url(../font/open-sans-v17-latin-600.woff) format("woff"), url(../font/open-sans-v17-latin-600.ttf) format("truetype"), url(../font/open-sans-v17-latin-600.svg#OpenSans) format("svg")
 }
 
 @font-face {
@@ -54,8 +46,6 @@
     font-family: Open Sans;
     font-style: normal;
     font-weight: 700;
-    src: url(../font/open-sans-v17-latin-700.eot);
-    src: url(../font/open-sans-v17-latin-700.eot?#iefix) format("embedded-opentype"), url(../font/open-sans-v17-latin-700.woff2) format("woff2"), url(../font/open-sans-v17-latin-700.woff) format("woff"), url(../font/open-sans-v17-latin-700.ttf) format("truetype"), url(../font/open-sans-v17-latin-700.svg#OpenSans) format("svg")
 }
 
 @font-face {
@@ -63,8 +53,6 @@
     font-family: Work Sans;
     font-style: normal;
     font-weight: 400;
-    src: url(../font/work-sans-v5-latin-regular.eot);
-    src: url(../font/work-sans-v5-latin-regular.eot?#iefix) format("embedded-opentype"), url(../font/work-sans-v5-latin-regular.woff2) format("woff2"), url(../font/work-sans-v5-latin-regular.woff) format("woff"), url(../font/work-sans-v5-latin-regular.ttf) format("truetype"), url(../font/work-sans-v5-latin-regular.svg#WorkSans) format("svg")
 }
 
 @font-face {
@@ -72,8 +60,6 @@
     font-family: Work Sans;
     font-style: normal;
     font-weight: 700;
-    src: url(../font/work-sans-v5-latin-700.eot);
-    src: url(../font/work-sans-v5-latin-700.eot?#iefix) format("embedded-opentype"), url(../font/work-sans-v5-latin-700.woff2) format("woff2"), url(../font/work-sans-v5-latin-700.woff) format("woff"), url(../font/work-sans-v5-latin-700.ttf) format("truetype"), url(../font/work-sans-v5-latin-700.svg#WorkSans) format("svg")
 }
 
 :root {
@@ -358,11 +344,11 @@ html.dark-theme {
 }
 
 html.dark-theme .home-link {
-    background: url(../img/home-o-dark.svg) no-repeat 50%
+    background: url(_/img/home-o-dark.svg) no-repeat 50%
 }
 
 html.dark-theme .home-link.is-current, html.dark-theme .home-link:hover {
-    background: url(../img/home-dark.svg) no-repeat 50%
+    background: url(_/img/home-dark.svg) no-repeat 50%
 }
 
 *, ::after, ::before {
@@ -596,7 +582,7 @@ object[type="image/svg+xml"]:not([width]) {
 }
 
 .nav-list a.link-external::after {
-    content: url(../img/link-external.svg);
+    content: url(_/img/link-external.svg);
     display: inline-block;
     filter: opacity(.5);
     height: 14px;
@@ -632,7 +618,7 @@ object[type="image/svg+xml"]:not([width]) {
 }
 
 .nav-item-toggle {
-    background: transparent url(../img/chevron.svg) no-repeat 50%/50%;
+    background: transparent url(_/img/chevron.svg) no-repeat 50%/50%;
     border: none;
     height: calc(var(--nav-line-height) * 1.1em);
     left: 2px;
@@ -645,7 +631,7 @@ object[type="image/svg+xml"]:not([width]) {
 }
 
 .dark-theme .nav-item-toggle, .nav-item.is-current-page > .nav-item-toggle {
-    background: transparent url(../img/chevron-white.svg) no-repeat 50%/50%;
+    background: transparent url(_/img/chevron-white.svg) no-repeat 50%/50%;
     filter: opacity(75%)
 }
 
@@ -658,7 +644,7 @@ object[type="image/svg+xml"]:not([width]) {
 }
 
 .dark-theme .nav-item.is-current-page > .nav-item-toggle {
-    background: transparent url(../img/chevron.svg) no-repeat 50%/50%
+    background: transparent url(_/img/chevron.svg) no-repeat 50%/50%
 }
 
 .dark-theme .nav-item.is-active > .nav-item-toggle, .nav-item.is-active > .nav-item-toggle {
@@ -843,13 +829,13 @@ html.dark-theme button.browse-version:hover {
 }
 
 .nav-collapse button span {
-    background: transparent url(../img/chevron.svg) no-repeat 50%/50%;
+    background: transparent url(_/img/chevron.svg) no-repeat 50%/50%;
     display: block;
     transform: rotate(90deg)
 }
 
 .dark-theme .nav-collapse button span {
-    background: transparent url(../img/chevron-white.svg) no-repeat 50%/50%;
+    background: transparent url(_/img/chevron-white.svg) no-repeat 50%/50%;
     filter: opacity(75%)
 }
 
@@ -1199,7 +1185,7 @@ html.dark-theme #modal-versions .colset .col-right {
 }
 
 #modal-versions .version-toggle span {
-    background: transparent url(../img/chevron.svg) no-repeat 50%/50%;
+    background: transparent url(_/img/chevron.svg) no-repeat 50%/50%;
     border: none;
     height: 30px;
     left: 0;
@@ -1212,7 +1198,7 @@ html.dark-theme #modal-versions .colset .col-right {
 }
 
 html.dark-theme #modal-versions .version-toggle span {
-    background: transparent url(../img/chevron-white.svg) no-repeat 50%/50%
+    background: transparent url(_/img/chevron-white.svg) no-repeat 50%/50%
 }
 
 #modal-versions .is-active .version-toggle span {
@@ -1323,7 +1309,7 @@ html.dark-theme .invert-dark img {
 }
 
 .nav-toggle {
-    background: url(../img/menu.svg) no-repeat 50% 47.5%;
+    background: url(_/img/menu.svg) no-repeat 50% 47.5%;
     background-size: 49%;
     border: none;
     height: var(--toolbar-height);
@@ -1353,7 +1339,7 @@ html.dark-theme .invert-dark img {
 }
 
 html.dark-theme .nav-toggle {
-    background: url(../img/menu-dark.svg) no-repeat 50% 47.5%;
+    background: url(_/img/menu-dark.svg) no-repeat 50% 47.5%;
     background-size: 49%
 }
 
@@ -1364,17 +1350,17 @@ html.dark-theme .nav-toggle {
 }
 
 .nav-toggle.is-active {
-    background-image: url(../img/back.svg);
+    background-image: url(_/img/back.svg);
     background-size: 41.5%
 }
 
 html.dark-theme .nav-toggle.is-active {
-    background-image: url(../img/back-dark.svg);
+    background-image: url(_/img/back-dark.svg);
     background-size: 41.5%
 }
 
 .home-link {
-    background: url(../img/home-o.svg) no-repeat 50%;
+    background: url(_/img/home-o.svg) no-repeat 50%;
     display: block;
     height: calc(var(--toolbar-height) / 2);
     margin: calc(var(--toolbar-height) / 4);
@@ -1382,7 +1368,7 @@ html.dark-theme .nav-toggle.is-active {
 }
 
 .home-link.is-current, .home-link:hover {
-    background-image: url(../img/home.svg)
+    background-image: url(_/img/home.svg)
 }
 
 .page-versions {
@@ -1398,7 +1384,7 @@ html.dark-theme .nav-toggle.is-active {
 }
 
 .page-versions .version-menu-toggle {
-    background: url(../img/chevron.svg) no-repeat;
+    background: url(_/img/chevron.svg) no-repeat;
     background-position: right .5rem top 50%;
     background-size: auto .75em;
     border: none;
@@ -1411,7 +1397,7 @@ html.dark-theme .nav-toggle.is-active {
 }
 
 .dark-theme .page-versions .version-menu-toggle {
-    background: url(../img/chevron-white.svg) no-repeat;
+    background: url(_/img/chevron-white.svg) no-repeat;
     background-position: right .5rem top 50%;
     background-size: auto .75em
 }
@@ -6427,15 +6413,15 @@ mark {
 }
 
 .doc .source-toolbox .copy-button {
-    background: no-repeat scroll 50% 50%/16px 16px padding-box border-box url(../img/octicons-16.svg#view-copy)
+    background: no-repeat scroll 50% 50%/16px 16px padding-box border-box url(_/img/octicons-16.svg#view-copy)
 }
 
 .doc .source-toolbox .fold-button {
-    background: no-repeat scroll 50% 50%/16px 16px padding-box border-box url(../img/octicons-16.svg#view-unfold)
+    background: no-repeat scroll 50% 50%/16px 16px padding-box border-box url(_/img/octicons-16.svg#view-unfold)
 }
 
 .doc code.is-unfolded + .source-toolbox .fold-button {
-    background-image: url(../img/octicons-16.svg#view-fold)
+    background-image: url(_/img/octicons-16.svg#view-fold)
 }
 
 .doc .source-toolbox .copy-toast {
@@ -6529,7 +6515,7 @@ mark {
 }
 
 .doc .admonitionblock td.icon i.icon-caution {
-    background: no-repeat scroll .5em 50%/16px 16px padding-box border-box url(../img/octicons-16.svg#view-flame)
+    background: no-repeat scroll .5em 50%/16px 16px padding-box border-box url(_/img/octicons-16.svg#view-flame)
 }
 
 .doc .admonitionblock.important td.icon {
@@ -6537,7 +6523,7 @@ mark {
 }
 
 .doc .admonitionblock td.icon i.icon-important {
-    background: no-repeat scroll .5em 50%/16px 16px padding-box border-box url(../img/octicons-16.svg#view-stop)
+    background: no-repeat scroll .5em 50%/16px 16px padding-box border-box url(_/img/octicons-16.svg#view-stop)
 }
 
 .doc .admonitionblock.note .icon {
@@ -6545,7 +6531,7 @@ mark {
 }
 
 .doc .admonitionblock td.icon i.icon-note {
-    background: no-repeat scroll .5em 50%/16px 16px padding-box border-box url(../img/octicons-16.svg#view-info)
+    background: no-repeat scroll .5em 50%/16px 16px padding-box border-box url(_/img/octicons-16.svg#view-info)
 }
 
 .doc .admonitionblock.tip .icon {
@@ -6553,7 +6539,7 @@ mark {
 }
 
 .doc .admonitionblock td.icon i.icon-tip {
-    background: no-repeat scroll .5em 50%/16px 16px padding-box border-box url(../img/octicons-16.svg#view-light-bulb)
+    background: no-repeat scroll .5em 50%/16px 16px padding-box border-box url(_/img/octicons-16.svg#view-light-bulb)
 }
 
 .doc .admonitionblock.warning .icon {
@@ -6561,7 +6547,7 @@ mark {
 }
 
 .doc .admonitionblock td.icon i.icon-warning {
-    background: no-repeat scroll .5em 50%/16px 16px padding-box border-box url(../img/octicons-16.svg#view-alert)
+    background: no-repeat scroll .5em 50%/16px 16px padding-box border-box url(_/img/octicons-16.svg#view-alert)
 }
 
 .doc table.tableblock {
@@ -6702,7 +6688,7 @@ body.fixed-toc #toc {
 
 #back-to-index a::before {
     background: no-repeat 50%/16px 16px;
-    background-image: url(../img/octicons-16.svg#view-chevron-left);
+    background-image: url(_/img/octicons-16.svg#view-chevron-left);
     content: "";
     display: block;
     filter: var(--toc-back-to-index-filter);
@@ -6735,7 +6721,7 @@ body.fixed-toc #tocbar-container {
 
 button#toggle-toc {
     background: no-repeat 50%/16px 16px;
-    background-image: url(../img/octicons-16.svg#view-three-bars);
+    background-image: url(_/img/octicons-16.svg#view-three-bars);
     border: none;
     display: block;
     filter: var(--toc-bar-button-filter);
@@ -6746,7 +6732,7 @@ button#toggle-toc {
 }
 
 body.show-toc button#toggle-toc {
-    background-image: url(../img/octicons-16.svg#view-x)
+    background-image: url(_/img/octicons-16.svg#view-x)
 }
 
 @media screen and (max-width: 800px) {
