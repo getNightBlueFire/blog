@@ -389,7 +389,6 @@ a:hover {
 }
 
 a:active {
-    background-color: none
 }
 
 code, kbd, pre {
@@ -448,7 +447,6 @@ table {
 }
 
 object[type="image/svg+xml"]:not([width]) {
-    width: -moz-fit-content;
     width: fit-content
 }
 
@@ -490,7 +488,7 @@ object[type="image/svg+xml"]:not([width]) {
 
     body ::-webkit-scrollbar-thumb {
         border-radius: 6px;
-        border-width: 1.75px
+        border-width: 2px
     }
 
     ::-webkit-scrollbar-thumb:hover {
@@ -812,7 +810,6 @@ html.dark-theme button.browse-version:hover {
     border: none;
     line-height: inherit;
     margin-left: calc(1.35 * -1em);
-    margin-left: calc(var(--nav-line-height) * -1em);
     margin-top: 2px;
     outline: none;
     padding: 0;
@@ -823,9 +820,7 @@ html.dark-theme button.browse-version:hover {
 
 .nav-collapse button, .nav-collapse button span {
     height: calc(1.35 * 1.5em);
-    height: calc(var(--nav-line-height) * 1.5em);
     width: calc(1.35 * 1.5em);
-    width: calc(var(--nav-line-height) * 1.5em)
 }
 
 .nav-collapse button span {
@@ -919,7 +914,7 @@ body.nav-sm .nav-panel-menu {
     }
 
     .nav {
-        box-shadow: .5px 0 3px var(--nav-border-color)
+        box-shadow: 1px 0 3px var(--nav-border-color)
     }
 }
 
@@ -946,7 +941,7 @@ body.nav-sm .nav-panel-menu {
     }
 }
 
-@media screen and (max-width: 1023.5px) {
+@media screen and (max-width: 1024px) {
     aside.sidebar {
         display: none
     }
@@ -1108,7 +1103,7 @@ html.dark-theme #modal-versions .colset .col-right {
     background: hsla(0, 0%, 100%, .1)
 }
 
-@media screen and (max-width: 1023.5px) {
+@media screen and (max-width: 1024px) {
     #modal-versions .colset {
         display: block
     }
@@ -1384,8 +1379,7 @@ html.dark-theme .nav-toggle.is-active {
 }
 
 .page-versions .version-menu-toggle {
-    background: url(_/img/chevron.svg) no-repeat;
-    background-position: right .5rem top 50%;
+    background: url(_/img/chevron.svg) no-repeat right .5rem top 50%;
     background-size: auto .75em;
     border: none;
     color: inherit;
@@ -1397,8 +1391,7 @@ html.dark-theme .nav-toggle.is-active {
 }
 
 .dark-theme .page-versions .version-menu-toggle {
-    background: url(_/img/chevron-white.svg) no-repeat;
-    background-position: right .5rem top 50%;
+    background: url(_/img/chevron-white.svg) no-repeat right .5rem top 50%;
     background-size: auto .75em
 }
 
@@ -1760,7 +1753,6 @@ html.dark-theme .nav-toggle.is-active {
 
 .doc table.tableblock, .doc table.tableblock > * > tr > * {
     border: 0 solid #eaedf0;
-    border: 0 solid var(--table-border-color)
 }
 
 .doc table.grid-all > * > tr > * {
@@ -1776,7 +1768,7 @@ html.dark-theme .nav-toggle.is-active {
 }
 
 .doc table.grid-all > thead th, .doc table.grid-rows > thead th {
-    border-bottom-width: 2.5px
+    border-bottom-width: 3px
 }
 
 .doc table.frame-all {
@@ -1879,7 +1871,6 @@ html.dark-theme .nav-toggle.is-active {
     height: 1.25rem;
     padding: 0 .5rem;
     vertical-align: initial;
-    width: -moz-fit-content;
     width: fit-content
 }
 
@@ -2161,7 +2152,6 @@ html.dark-theme .nav-toggle.is-active {
 
 .doc .exampleblock > .content, .doc details.result > .content {
     border: .25rem solid #eaedf0;
-    border: .25rem solid var(--example-border-color);
     border-radius: .5rem
 }
 
@@ -2198,7 +2188,7 @@ html.dark-theme .nav-toggle.is-active {
 
 .doc .listingblock pre:not(.highlight), .doc .literalblock pre, .doc pre.highlight > code {
     background: var(--pre-background);
-    box-shadow: inset 0 0 1.75px var(--pre-border-color);
+    box-shadow: inset 0 0 2px var(--pre-border-color);
     display: block;
     overflow-x: auto;
     padding: .875em
@@ -2360,7 +2350,6 @@ html.dark-theme .nav-toggle.is-active {
 .doc kbd {
     background: var(--kbd-background);
     border: 1px solid #c1c1c1;
-    border: 1px solid var(--kbd-border-color);
     border-radius: .25em;
     box-shadow: 0 1px 0 var(--kbd-border-color), 0 0 0 .1em var(--body-background) inset;
     display: inline-block;
@@ -2640,7 +2629,7 @@ body {
 
 .navbar-burger span {
     background-color: var(--navbar-font-color);
-    height: 1.5px;
+    height: 2px;
     width: 1rem
 }
 
@@ -2674,7 +2663,7 @@ body {
     color: var(--navbar-menu-font-color);
     display: block;
     font-family: var(--font-family-special);
-    font-size: 15.2px;
+    font-size: 15px;
     font-weight: 500;
     line-height: var(--doc-line-height);
     padding: 0 1rem;
@@ -2727,7 +2716,6 @@ body {
     align-items: center;
     background: var(--navbar-button-background);
     border: 1px solid #eaedf0;
-    border: 1px solid var(--navbar-button-border-color);
     border-radius: .15rem;
     color: var(--navbar-button-font-color);
     display: inline-flex;
@@ -2736,7 +2724,7 @@ body {
     white-space: nowrap
 }
 
-@media screen and (max-width: 1023.5px) {
+@media screen and (max-width: 1024px) {
     .navbar-brand {
         height: inherit
     }
@@ -2935,7 +2923,6 @@ footer.footer {
 
 .footer a, .footer p {
     color: #111;
-    color: var(--footer-link-font-color)
 }
 
 .footer a:hover {
@@ -3272,7 +3259,6 @@ footer.footer {
 #search-input {
     background: var(--body-background-color);
     border: 1px solid #c1c1c1;
-    border: 1px solid var(--kbd-border-color);
     border-radius: .1em;
     color: var(--body-font-dark-color);
     display: block;
@@ -3294,8 +3280,6 @@ footer.footer {
     font-family: FontAwesome;
     font-style: normal;
     font-weight: 400;
-    src: url(../font/fontawesome-webfont.eot?v=4.7.0);
-    src: url(../font/fontawesome-webfont.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(../font/fontawesome-webfont.woff2?v=4.7.0) format("woff2"), url(../font/fontawesome-webfont.woff?v=4.7.0) format("woff"), url(../font/fontawesome-webfont.ttf?v=4.7.0) format("truetype"), url(../font/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format("svg")
 }
 
 .fa {
@@ -6687,8 +6671,7 @@ body.fixed-toc #toc {
 }
 
 #back-to-index a::before {
-    background: no-repeat 50%/16px 16px;
-    background-image: url(_/img/octicons-16.svg#view-chevron-left);
+    background: url(_/img/octicons-16.svg#view-chevron-left) no-repeat 50% 50%;
     content: "";
     display: block;
     filter: var(--toc-back-to-index-filter);
@@ -6703,7 +6686,7 @@ body.fixed-toc #toc {
     border-bottom: 1px solid #eaedf0;
     border-bottom: 1px solid var(--panel-border-color);
     display: var(--toc-bar-display);
-    height: var(--tocbar-height);
+    height: auto;
     width: 100%;
     z-index: 10000
 }
@@ -6720,8 +6703,7 @@ body.fixed-toc #tocbar-container {
 }
 
 button#toggle-toc {
-    background: no-repeat 50%/16px 16px;
-    background-image: url(_/img/octicons-16.svg#view-three-bars);
+    background: url(_/img/octicons-16.svg#view-three-bars) no-repeat 50% 50%;
     border: none;
     display: block;
     filter: var(--toc-bar-button-filter);
